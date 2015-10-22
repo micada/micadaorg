@@ -35,7 +35,7 @@ class CurrentDoc extends React.Component {
     render() {
 
         return (
-            <div className="awf-header">
+            <div className="panel awf-header">
                 <h2>{this.state.currentDoc.title}</h2>
                 <p>{this.state.currentDoc.body}</p>
             </div>
