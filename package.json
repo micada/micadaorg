@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify src/main.js -t babelify --outfile public/js/bundle.js && node-sass --output-style compressed styles/main.scss public/css/main.css",
-    "start": "node index.js"
+    "build-js": "browserify src/main.js -t babelify --outfile public/js/bundle.js",
+    "build-css": "./bin/build-css",
+    "start": "node index-server.js",
+    "build": "npm run build-js & npm run build-css"
   },
   "repository": {
     "type": "git",
@@ -23,16 +25,18 @@
     "axios": "^0.7.0",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
+    "flexboxgrid": "^6.3.0",
     "history": "^1.12.4",
     "lodash": "^3.10.1",
     "method-override": "^2.3.5",
     "morgan": "^1.6.1",
+    "node-bourbon": "^4.2.3",
+    "node-neat": "^1.7.2",
     "path": "^0.12.7",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-router": "^1.0.0-rc3",
-    "serve-static": "^1.10.0"
-  },
+    "serve-static": "^1.10.0"  },
   "devDependencies": {
     "babelify": "^6.3.0",
     "node-sass": "^3.3.3"
