@@ -22,7 +22,7 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div className="container">
+            <div>
                 <Header/>
                 {React.cloneElement(this.props.children, {
                     docs: this.state.DOCS

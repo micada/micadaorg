@@ -63,6 +63,16 @@ var url = process.env.IP || '0.0.0.0'
 var port = 3000;
 app.set('port', process.env.PORT || port)
 
-var server = app.listen(app.get('port'), url, function () {
-    console.log('Static server listening url %s on port %s', url, server.address().port);
-})
+function listening() {
+    // NODE_ENV=production node index.js
+    if (process.env.NODE_ENV == 'production') {
+        console.log('Static server listening url %s on port %s', url, server.address().port);
+    } else {
+        browserSync({
+            proxy: 'localhost:' + port,
+            files: ['public/**/*.{js,css}']
+        });
+    }
+}
+
+var server = app.listen(port, listening);
