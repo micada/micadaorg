@@ -9,10 +9,10 @@ class Docs extends React.Component {
                     <h1>react-starter Docs</h1>
                 </div>
                 <div className="row">
-                    <div className="col-sm-6">
+                    <div className="column-xsmall-6">
                         <DocsList docs={this.props.docs}/>
                     </div>
-                    <div className="col-sm-6">
+                    <div className="column-xsmall-6">
                         {this.props.children}
                     </div>
                 </div>

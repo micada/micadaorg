@@ -2,9 +2,11 @@ var express = require('express')
 var morgan = require('morgan');
 var serveStatic = require('serve-static')
 var bodyParser = require('body-parser');
+var browserSync = require('browser-sync');
 var methodOverride = require('method-override');
 var path = require('path');
 var _ = require('lodash');
+
 
 // web app middleware
 var app = express();
