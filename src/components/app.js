@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './home/header';
+import Header from './main/header';
 import docUtils from '../data/doc-utils.js';
 
 class App extends React.Component {
