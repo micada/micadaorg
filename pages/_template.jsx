@@ -8,7 +8,7 @@ import { colors, activeColors } from 'utils/colors'
 import typography from 'utils/typography';
 
 // Style code
-import 'css/github.css';
+import 'styles/styles.css';
 
 const { rhythm, fontSizeToPx } = typography;
 
