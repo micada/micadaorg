@@ -1,5 +1,7 @@
 var express = require('express');
 var methodOverride = require('method-override');
+var path = require('path');
+var serveStatic = require('serve-static')
 
 // web app middleware
 var app = express();
