@@ -2462,3 +2462,25 @@ body._2ri2myAR_eG-hJTfdwThAP {
   float: right; }
 
 /*# sourceMappingURL=foundation-flex.css.map */
+
+._3fV7SSBJOT7sw5Np3KqsgF {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.wRwCdqmCcKvGye7BEH832 {
+  height: 100vh;
+  width: 100vw;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  fill: #fff;
+  width: 100vw;
+}
