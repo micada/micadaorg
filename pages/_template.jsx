@@ -69,7 +69,6 @@ module.exports = React.createClass({
                   }}
                   href="https://github.com/gatsbyjs/gatsby"
                 >
-                  Github
                 </a>
                 <Link
                   to={link('/examples/')}
@@ -86,7 +85,6 @@ module.exports = React.createClass({
                     marginTop: rhythm(-1)
                   }}
                 >
-                  Examples
                 </Link>
                 <Link
                   to={link('/docs/')}
@@ -103,7 +101,6 @@ module.exports = React.createClass({
                     marginTop: rhythm(-1)
                   }}
                 >
-                  Documentation
                 </Link>
               </Span>
             </Grid>
@@ -115,7 +112,7 @@ module.exports = React.createClass({
             padding: `${rhythm(1)} ${rhythm(1/2)}`,
             paddingTop: 0
           }}
-        >
+        className="content">
           <RouteHandler {...this.props}/>
         </Container>
       </div>
