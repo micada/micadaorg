@@ -25,8 +25,8 @@ module.exports = React.createClass({
       <div>
         <div
           style={{
-            background: colors.bg,
-            color: colors.fg,
+            background: '#000',
+            color: '#fff',
             marginBottom: rhythm(1.5)
           }}
         >
@@ -53,7 +53,7 @@ module.exports = React.createClass({
                   to={link('/')}
                   style={{
                     textDecoration: 'none',
-                    color: colors.fg,
+                    color: '#fff',
                     fontSize: fontSizeToPx("25.5px").fontSize
                   }}
                 >
@@ -64,7 +64,7 @@ module.exports = React.createClass({
                 <a
                   style={{
                     float: 'right',
-                    color: colors.fg,
+                    color: '#fff',
                     textDecoration: 'none',
                     marginLeft: rhythm(1/2)
                   }}
@@ -75,8 +75,8 @@ module.exports = React.createClass({
                 <Link
                   to={link('/examples/')}
                   style={{
-                    background: examplesActive ? activeColors.bg : colors.bg,
-                    color: examplesActive ? activeColors.fg : colors.fg,
+                    background: '#000',
+                    color: '#fff',
                     float: 'right',
                     textDecoration: 'none',
                     paddingLeft: rhythm(1/2),
@@ -92,8 +92,8 @@ module.exports = React.createClass({
                 <Link
                   to={link('/docs/')}
                   style={{
-                    background: docsActive ? activeColors.bg : colors.bg,
-                    color: docsActive ? activeColors.fg : colors.fg,
+                    background: '#000',
+                    color: '#fff',
                     float: 'right',
                     textDecoration: 'none',
                     paddingLeft: rhythm(1/2),
