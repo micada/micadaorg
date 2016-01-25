@@ -3,7 +3,6 @@ import { RouteHandler, Link, State } from 'react-router';
 import { Container, Grid, Breakpoint, Span } from 'react-responsive-grid';
 import includes from 'underscore.string/include';
 import { link } from 'gatsby-helpers';
-import { colors, activeColors } from 'utils/colors'
 
 import typography from 'utils/typography';
 
