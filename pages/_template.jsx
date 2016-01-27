@@ -21,11 +21,13 @@ module.exports = React.createClass({
     const examplesActive = (routes.indexOf(link("/examples/")) >= 0);
 
     return (
-      <div>
-        <div
-          style={{
+      <div style={{
             background: '#000',
             color: '#fff',
+            fontFamily: 'Verdana'
+          }}>
+        <div
+          style={{
             marginBottom: rhythm(1.5)
           }}
         >
