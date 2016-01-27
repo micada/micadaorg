@@ -3,11 +3,12 @@ import { RouteHandler, Link, State } from 'react-router';
 import { Container, Grid, Breakpoint, Span } from 'react-responsive-grid';
 import includes from 'underscore.string/include';
 import { link } from 'gatsby-helpers';
+import { colors, activeColors } from 'utils/colors'
 
 import typography from 'utils/typography';
 
 // Style code
-import 'styles/styles.css';
+import 'css/github.css';
 
 const { rhythm, fontSizeToPx } = typography;
 
@@ -24,8 +25,8 @@ module.exports = React.createClass({
       <div>
         <div
           style={{
-            background: '#000',
-            color: '#fff',
+            background: colors.bg,
+            color: colors.fg,
             marginBottom: rhythm(1.5)
           }}
         >
@@ -52,7 +53,7 @@ module.exports = React.createClass({
                   to={link('/')}
                   style={{
                     textDecoration: 'none',
-                    color: '#fff',
+                    color: colors.fg,
                     fontSize: fontSizeToPx("25.5px").fontSize
                   }}
                 >
@@ -63,18 +64,19 @@ module.exports = React.createClass({
                 <a
                   style={{
                     float: 'right',
-                    color: '#fff',
+                    color: colors.fg,
                     textDecoration: 'none',
                     marginLeft: rhythm(1/2)
                   }}
                   href="https://github.com/gatsbyjs/gatsby"
                 >
+                  Github
                 </a>
                 <Link
                   to={link('/examples/')}
                   style={{
-                    background: '#000',
-                    color: '#fff',
+                    background: examplesActive ? activeColors.bg : colors.bg,
+                    color: examplesActive ? activeColors.fg : colors.fg,
                     float: 'right',
                     textDecoration: 'none',
                     paddingLeft: rhythm(1/2),
@@ -85,12 +87,13 @@ module.exports = React.createClass({
                     marginTop: rhythm(-1)
                   }}
                 >
+                  Examples
                 </Link>
                 <Link
                   to={link('/docs/')}
                   style={{
-                    background: '#000',
-                    color: '#fff',
+                    background: docsActive ? activeColors.bg : colors.bg,
+                    color: docsActive ? activeColors.fg : colors.fg,
                     float: 'right',
                     textDecoration: 'none',
                     paddingLeft: rhythm(1/2),
@@ -101,6 +104,7 @@ module.exports = React.createClass({
                     marginTop: rhythm(-1)
                   }}
                 >
+                  Documentation
                 </Link>
               </Span>
             </Grid>
@@ -108,13 +112,11 @@ module.exports = React.createClass({
         </div>
         <Container
           style={{
-            background: '#000',
-            color: '#fff',
             maxWidth: 960,
             padding: `${rhythm(1)} ${rhythm(1/2)}`,
             paddingTop: 0
           }}
-        className="content">
+        >
           <RouteHandler {...this.props}/>
         </Container>
       </div>
