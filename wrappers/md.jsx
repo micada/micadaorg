@@ -1,11 +1,9 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
-import typography from 'utils/typography';
-const { rhythm } = typography;
 
 module.exports = React.createClass({
   render: function() {
-    var post, rhythm;
+    var post;
     post = this.props.page.data;
 
     return (

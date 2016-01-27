@@ -2,8 +2,6 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 
 import { link } from 'gatsby-helpers';
-import typography from './utils/typography';
-const { TypographyStyle } = typography;
 
 module.exports = React.createClass({
   getDefaultProps: function() {
@@ -27,7 +25,6 @@ module.exports = React.createClass({
           <meta name='viewport' content='user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0'/>
           <title>{title}</title>
           <link rel="shortcut icon" href={this.props.favicon}/>
-          <TypographyStyle/>
         </head>
         <body className="landing-page">
           <div id="react-mount" className="app-view" dangerouslySetInnerHTML={{__html: this.props.body}} />
