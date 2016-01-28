@@ -1,0 +1,38 @@
+.top-bar {
+  padding: 1.5rem 0; 
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; 
+  justify-content: space-between;
+}
+
+.landing-page {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.content {
+  position: relative;
+  background: #000;
+  z-index: 1;
+}
+
+svg.city {
+  position: absolute;
+  bottom: 0;
+  fill: #fff;
+  width: 100vw;
+}

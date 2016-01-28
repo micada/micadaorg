@@ -4,8 +4,7 @@ import { Container, Grid, Breakpoint, Span } from 'react-responsive-grid';
 import includes from 'underscore.string/include';
 import { link } from 'gatsby-helpers';
 
-// Style code
-import 'styles/styles.css';
+import '../public/styles.css';
 
 module.exports = React.createClass({
   mixins: [State],
