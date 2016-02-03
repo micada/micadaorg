@@ -17,6 +17,7 @@ var router = express.Router();
 app.use(serveStatic(__dirname + '/public'))
 app.get('*', function(req, res) {
     res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+    res.sendFile(path.resolve(__dirname, 'public', 'styles.css'))
 })
 
 var url = process.env.IP || '0.0.0.0'

@@ -4,7 +4,7 @@ import DocumentTitle from 'react-document-title';
 import { link } from 'gatsby-helpers';
 
 // Style code
-require ('styles/main.scss');
+import 'styles/main.scss';
 
 module.exports = React.createClass({
   getDefaultProps: function() {
@@ -28,6 +28,7 @@ module.exports = React.createClass({
           <meta name='viewport' content='user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0'/>
           <title>{title}</title>
           <link rel="shortcut icon" href={this.props.favicon} />
+          <link rel="stylesheet" type="text/css" href='./styles.css'/>
         </head>
         <body className="landing-page" style={{background: '#000', color: '#fff', fontFamily: 'Verdana', fontWeight: '400', lineHeight: '25px'}} >
           <div id="react-mount" className="app-view" dangerouslySetInnerHTML={{__html: this.props.body}} />
