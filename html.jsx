@@ -30,7 +30,7 @@ module.exports = React.createClass({
           <link rel="shortcut icon" href={this.props.favicon} />
           <link rel="stylesheet" type="text/css" href='./styles.css'/>
         </head>
-        <body className="landing-page" style={{background: '#000', color: '#fff', fontFamily: 'Verdana', fontWeight: '400', lineHeight: '25px'}} >
+        <body className="landing-page">
           <div id="react-mount" className="app-view" dangerouslySetInnerHTML={{__html: this.props.body}} />
             <svg viewBox="0 0 85 18" className="city">
               <g transform="translate(-10.000000, 0.000000)" fill="#fff">

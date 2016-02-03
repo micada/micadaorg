@@ -19,8 +19,8 @@ module.exports = React.createClass({
           <Container>
             <Grid columns={12}>
               <Span columns={4}>
-                <Link to={link('/')} style={{color: '#fff'}}>
-                <h4 style={{fontWeight: '400'}}>{this.props.config.siteTitle}</h4>
+                <Link to={link('/')}>
+                <h4>{this.props.config.siteTitle}</h4>
                 </Link>
               </Span>
               <Span columns={8} last={true}>
