@@ -6,6 +6,8 @@ import { link } from 'gatsby-helpers';
 // Style code
 import 'styles/main.scss';
 
+require('favicon.ico');
+
 module.exports = React.createClass({
   getDefaultProps: function() {
     return {
@@ -27,7 +29,7 @@ module.exports = React.createClass({
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name='viewport' content='user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0'/>
           <title>{title}</title>
-          <link rel="shortcut icon" href={this.props.favicon} />
+          <link rel="shortcut icon" href='./favicon.ico' />
           <link rel="stylesheet" type="text/css" href='./styles.css'/>
         </head>
         <body className="landing-page">

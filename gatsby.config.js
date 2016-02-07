@@ -6,8 +6,13 @@ module.exports = function(config, env) {
       cfg.loader = ExtractTextPlugin.extract('css?minimize!sass');
       return cfg
     })
-    config.loader('font', function(cfg) {
+    config.loader('fonts', function(cfg) {
       cfg.test =  /\.(ttf|eot|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/;
+      cfg.loader = 'file-loader';
+      return cfg
+    })
+    config.loader('favicon', function(cfg) {
+      cfg.test = /\.ico$/;
       cfg.loader = 'file-loader';
       return cfg
     })
