@@ -21,34 +21,22 @@ module.exports = React.createClass({
             </Link>
           </span>
           <span className="columns small-1">
-            <a href='http://github.com/micada' className='icon' target='_blank'>
-              circlegithubalt
-            </a>
+            <a href='http://github.com/micada' className='icon' target='_blank' title="circlegithubalt" />
           </span>
           <span className="columns small-1">
-            <a href='https://www.linkedin.com/in/micaalaniz' className='icon' target='_blank'>
-              circlelinkedin
-            </a>
+            <a href='https://www.linkedin.com/in/micaalaniz' className='icon' target='_blank' title="circlelinkedin" />
           </span>
           <span className="columns small-1">
-            <a href='http://www.meetup.com/members/114046342/' className='icon' target='_blank'>
-              circlemeetup
-            </a>
+            <a href='http://www.meetup.com/members/114046342/' className='icon' target='_blank' title="circlemeetup" />
           </span>
           <span className="columns small-1">
-            <a href='http://instagram.com/micada' className='icon' target='_blank'>
-              circleinstagram
-            </a>
+            <a href='http://instagram.com/micada' className='icon' target='_blank' title="circleinstagram" />
           </span>
           <span className="columns small-1">
-            <a href='https://www.facebook.com/micada' className='icon' target='_blank'>
-              circlefacebook
-            </a>
+            <a href='https://www.facebook.com/micada' className='icon' target='_blank' title="circlefacebook"/>
           </span>
           <span className="columns small-1">
-            <a href='https://twitter.com/micarbma' className='icon' target='_blank'>
-              circletwitterbird
-            </a>
+            <a href='https://twitter.com/micarbma' className='icon' target='_blank' title="circletwitterbird" />
           </span>
           </div>
           <div className="row align-center">
