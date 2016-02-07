@@ -16,13 +16,9 @@ var router = express.Router();
 // a script tag to your application's JavaScript file(s).
 app.use(serveStatic(__dirname + '/public'))
 app.get('*', function(req, res) {
-    res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
-    res.sendFile(path.resolve(__dirname, 'public', 'styles.css'))
-    res.sendFile(path.resolve(__dirname, 'public', '05d72bd616722f39afef30004839ce08.eot'))
-    res.sendFile(path.resolve(__dirname, 'public', '6ef18e62928bfbe78057f6604702062a.woff'))
-    res.sendFile(path.resolve(__dirname, 'public', 'd3b5827e4faf0b034d4b2bcaa6d43724.ttf'))
-    res.sendFile(path.resolve(__dirname, 'public', 'bb587e5c486d57dfc51d5579c9ea4b49.otf'))
-
+    res.sendFile(path.resolve(__dirname, 'public', 
+      ['index.html', 'styles.css', '05d72bd616722f39afef30004839ce08.eot', 
+      '6ef18e62928bfbe78057f6604702062a.woff', 'd3b5827e4faf0b034d4b2bcaa6d43724.ttf']))
 })
 
 var url = process.env.IP || '0.0.0.0'
