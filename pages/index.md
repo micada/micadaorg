@@ -2,7 +2,7 @@
 title: "Hi. Hello."
 ---
 
-#### My name is Mica.
+### My name is Mica.
 
 I am a New Media Enthusiast, Web/Application Developer, Culture Consultant, Podcast Devotee, Independent Promoter, Coffee Snob, STEM Mentor, Board Game Addict, Perpetual Student, Avid Reader, Event Organizer, Reckless Cyclist, Video Game Nerd, Dance Aficionado, Architecture Nut, Aspiring Foodie, Native Chicagoan, and *Total Square*.
 
