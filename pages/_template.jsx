@@ -1,17 +1,9 @@
 import React from 'react';
-import { RouteHandler, Link, State } from 'react-router';
-import includes from 'underscore.string/include';
+import { RouteHandler, Link} from 'react-router';
 import { link } from 'gatsby-helpers';
 
 module.exports = React.createClass({
-  mixins: [State],
   render: function() {
-    const routes = this.getRoutes().map(function(route) {
-      return route.path;
-    });
-    const docsActive = (routes.indexOf(link('/docs/')) >= 0);
-    const examplesActive = (routes.indexOf(link('/examples/')) >= 0);
-
     return (
       <div>
         <div className='row align-middle'>
