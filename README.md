@@ -1,7 +1,7 @@
 # micada.org: A personal site
 
 Built using [Gatsby: A React Static Site generator](https://github.com/gatsbyjs/gatsby)
-But (probably heinously) had a ton of it ripped out to serve my purposes.
+But (probably heinously) ripped a ton of it out to serve my purposes.
 
 Things to do:
 - Autoprefixer all the things
