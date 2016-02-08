@@ -3,7 +3,7 @@ import {RouteHandler, Link} from 'react-router';
 import {link} from 'gatsby-helpers';
 
 module.exports = React.createClass({
-  render() {
+  render: function () {
     return (
       <div>
         <div className="row align-middle">

@@ -1,6 +1,6 @@
 /* eslint max-len: [0] */
 
-import {React, PropTypes} from 'react';
+import React from 'react';
 import DocumentTitle from 'react-document-title';
 
 import {link} from 'gatsby-helpers';
@@ -11,13 +11,13 @@ import 'styles/main.scss';
 require('favicon.ico');
 
 module.exports = React.createClass({
-  getDefaultProps() {
+  getDefaultProps: function () {
     return {
       body: ''
     };
   },
 
-  render() {
+  render: function () {
     let title;
     title = DocumentTitle.rewind();
     if (this.props.title) {
