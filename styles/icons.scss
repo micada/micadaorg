@@ -19,7 +19,7 @@
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-size: 3rem;
-  transition: all 0.25s ease-out;
+  transition: all 0.25s ease-in-out;
 
   &:hover {
     color: black;
