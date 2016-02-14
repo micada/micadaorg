@@ -4,6 +4,9 @@ import {link} from 'gatsby-helpers';
 
 module.exports = React.createClass({
   render: function () {
+
+        console.log(this.props);
+
     return (
       <div>
         <div className="row align-middle">

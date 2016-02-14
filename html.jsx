@@ -15,6 +15,7 @@ module.exports = React.createClass({
     let title;
     title = DocumentTitle.rewind();
 
+    console.log(this.props);
 
     return (
       <html lang="en">
