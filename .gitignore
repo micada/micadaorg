@@ -1,3 +1,5 @@
 node_modules/
 pages-orig/
 npm-debug.log
+.DS_Store
+styles/.ds_Store

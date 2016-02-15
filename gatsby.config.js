@@ -1,9 +1,15 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-module.exports = function (config) {
+module.exports = function (config, env) {
+  let isStatic = env === 'static';
+
   config.loader('sass', function (cfg) {
     cfg.test = /\.scss$/;
-    cfg.loader = ExtractTextPlugin.extract('css?minimize!sass');
+    if (isStatic) {
+      cfg.loader = ExtractTextPlugin.extract('css?minimize!sass');
+    } else {
+      cfg.loader = 'style!css!sass';
+    }
     return cfg;
   });
   config.loader('fonts', function (cfg) {
@@ -16,8 +22,10 @@ module.exports = function (config) {
     cfg.loader = 'file-loader';
     return cfg;
   });
-  config.plugin('extract-css',
+  if (isStatic) {
+    config.plugin('extract-css',
                 ExtractTextPlugin,
                 ['styles.css', {allChunks: true}]);
+  }
   return config;
 };

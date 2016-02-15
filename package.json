@@ -1,12 +1,11 @@
 {
   "name": "Micada.org",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Micada.org by Gatsby: A React Static Site Generator",
   "main": "n/a",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/eslint/bin/eslint.js . --ext .jsx,.js",
-    "start": "node server.js"
+    "lint": "./node_modules/eslint/bin/eslint.js . --ext .jsx,.js"
   },
   "keywords": [
     "gatsby"
@@ -19,6 +18,7 @@
     "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "gatsby": "^0.7.7",
     "lodash": "^3.10.1",
     "method-override": "^2.3.5",
     "node-sass": "^3.4.2",
