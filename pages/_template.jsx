@@ -2,10 +2,11 @@ import React from 'react';
 import {RouteHandler, Link} from 'react-router';
 import {link} from 'gatsby-helpers';
 
+// Style code
+import styles from 'styles/main.scss';
+
 module.exports = React.createClass({
   render: function () {
-
-        console.log(this.props);
 
     return (
       <div>
