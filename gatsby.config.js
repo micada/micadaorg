@@ -1,17 +1,20 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 module.exports = function (config, env) {
-  let isStatic = env === 'static';
-
   config.loader('sass', function (cfg) {
     cfg.test = /\.scss$/;
-    if (isStatic) {
-      cfg.loader = ExtractTextPlugin.extract('css?minimize!sass');
-    } else {
+    if (env === 'develop') {
       cfg.loader = 'style!css!sass';
+    } else {
+      cfg.loader = ExtractTextPlugin.extract('css?minimize!sass');
     }
     return cfg;
   });
+  
+  config.plugin('extract-css',
+                ExtractTextPlugin,
+                ['styles.css', {allChunks: true}]);
+
   config.loader('fonts', function (cfg) {
     cfg.test = /\.(ttf|eot|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/;
     cfg.loader = 'file-loader';
@@ -22,10 +25,6 @@ module.exports = function (config, env) {
     cfg.loader = 'file-loader';
     return cfg;
   });
-  if (isStatic) {
-    config.plugin('extract-css',
-                ExtractTextPlugin,
-                ['styles.css', {allChunks: true}]);
-  }
+
   return config;
 };
