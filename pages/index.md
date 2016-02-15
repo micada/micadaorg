@@ -13,5 +13,3 @@ I’m not sure there’s much more to say than that. I finished my Masters at De
 This is a work in progress, so excuse the sawdust.
 
 \- Mica D. A.
-
-This is a test of staging #2.
