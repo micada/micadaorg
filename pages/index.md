@@ -14,4 +14,4 @@ This is a work in progress, so excuse the sawdust.
 
 \- Mica D. A.
 
-This is a test of staging.
+This is a test of staging #2.
