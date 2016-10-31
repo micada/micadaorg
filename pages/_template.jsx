@@ -10,7 +10,7 @@ module.exports = React.createClass({
 
     return (
       <div>
-        <div className="row align-middle">
+        <header className="row align-middle">
           <span className="columns small-12 medium-6">
             <Link to={link('/')}>
               <h4>{this.props.config.siteTitle}</h4>
@@ -40,7 +40,7 @@ module.exports = React.createClass({
             <a href="https://twitter.com/micarbma" className="icon"
               target="_blank" title="circletwitterbird" />
           </span>
-          </div>
+          </header>
           <div className="row align-center">
             <div className="column small-12 medium-8 content">
               <RouteHandler {...this.props}/>
