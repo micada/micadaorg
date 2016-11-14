@@ -22,7 +22,7 @@ app.get('*', function(req, res) {
 })
 
 var url = process.env.IP || '0.0.0.0'
-var port = 80;
+var port = 5000;
 app.set('port', process.env.PORT || port)
 
 function listening() {
